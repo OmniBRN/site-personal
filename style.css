@@ -1,0 +1,33 @@
+
+
+
+header {
+    background-color: pink;
+}
+
+header li
+{
+    display: flex;
+    flex-flow: row;
+}
+
+#about_me{
+    width: 22em;
+}
+
+main{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: yellow;
+}
+
+main article
+{
+    border-style: solid;
+    border-color: black;
+}
+
+footer{
+    background-color: lightblue;
+}
