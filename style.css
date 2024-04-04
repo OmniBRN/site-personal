@@ -1,33 +1,64 @@
-
-
-
-header {
-    background-color: pink;
+html{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    color: white;
+    background-color: rgb(30, 29, 29);
 }
 
+
+header, footer{
+    padding: 10px;
+    background-color: #98221e;
+    margin: -2px;
+}
 header li
 {
     display: flex;
     flex-flow: row;
 }
-
-#about_me{
-    width: 22em;
+li > a
+{
+    text-decoration: none;
+}
+li > a:link, a:visited
+{
+    color:white
+}
+nav > ul
+{
+    
+    display: flex;
+    padding: 1em;
+    border: solid pink;
+    justify-content:space-evenly;
+    align-items: center;
+}
+nav > ul > li
+{
+    background-color: crimson;
+    font: 1.2em "Fira Sans";
+    display: inline-flex;
+    padding: 1em;
+    border: solid black;
+    width:fit-content;
+    
 }
 
 main{
     display:flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: yellow;
+    background-color: rgb(56, 21, 17);
 }
 
 main article
 {
+    background-color: #934644;
     border-style: solid;
     border-color: black;
-}
-
-footer{
-    background-color: lightblue;
+    margin: 1em;
+    padding: 1em;
+    width: 30em;
 }
