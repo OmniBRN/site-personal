@@ -12,6 +12,13 @@ html
     color:white;
 }
 
+html .WIP
+{
+    display: flex;
+    justify-content: c;
+    width: 1750px;
+    height: 480px;
+}
 
 a
 {
@@ -83,6 +90,12 @@ header > nav > ul > li
     
 }
 
+.WIP
+{
+    display: flex;
+    width: 100%;
+}
+
 
 
 header>nav>ul>li>a 
@@ -118,17 +131,29 @@ MAIN BEGIN
 
 */
 
-
-
-main
+.Front-Page
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
+}
+
+.WIP
+{
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main
+{
     background-color: rgb(225, 64, 64);
     border-left: solid white;
     border-right: solid white;
     padding: 2em 1em 2em 1em
-
+    
 }
 
 #left
@@ -161,7 +186,7 @@ main
     background: #aa3030;
     display: flex;
     flex-flow: wrap column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     border: solid pink;
 }
@@ -176,7 +201,7 @@ main
     align-self:flex-end;
 }
 
-.Aboutme
+.Aboutme, .Proficiencies, .college_project, .WorkIP
 {
     width: 80%;
     display:flex;
