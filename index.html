@@ -8,23 +8,27 @@
 </head>
 <body>
    <header>
-        <p>Tudor Boureanu</p>
+        <div class="TitleLogin">
+            <p>Tudor Boureanu</p>
+            <div id="Login"><a href="./login.html">Login</a></div>
+        </div>
+        
         <nav>
             <ul>
                 
                 <li><a href=#about_me>About Me</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./blog.html">Blog</a></li>
+                <li><a id="Projects" href="./projects.html">Projects</a></li>
+                               <li><a href="./blog.html">Blog</a></li>
                 <li><a href=#contact>Contact</a>
-                <li><a href="./login.html">Login</a></li>
+            
                 
             </ul>
-        </nav>
-   </header> 
-   <main>
-        <article id="about_me">
+            </nav>
+        </header>
+    <main>
+        <article id = "left">
             <h1>About Me</h1>
-            <section>
+            <section class="Aboutme">
             <p>
                 Hi, my name is Tudor and I live in Bucharest. I am a studying Computer Science at the University of Bucharest. 
                 I have also finished National College Ion Creanga Bucharest. I got into computers at a young age because I
@@ -36,27 +40,48 @@
                     <li>Fixing and Modding Hardware (mostly consoles)</li>
                     <li>Socializing</li>
                 </ul>
-                If you're wonder what I've achieved (mostly nothing) you can take a look at the Projects tab. You can also read my blog and shoot me a message if you want to.
+            </p>
+            <div class="Images">
+                <img src="./imagini/GNULinux.png" alt="Linux Desktop Image">
+                <img src="./imagini/pineapple-router.jpg" alt="Pineapple Router">
+                <img src="./imagini/xbox360.jpg" alt = "Xbox 360 in proces de modare">
+                <img src="./imagini/touch-grass.jpg" alt="grass">
+            </div>
+                <p>
+                If you're wondering what I've achieved (mostly nothing) you can take a look at the Projects tab. You can also read my blog and shoot me a message if you want to.
             </p>
             
             </section>
         </article>
-        <article id="working_On">
-            <h1>Currently Working On</h1>
-            <section class="college_project">
-                <h3>HTML & CSS Project</h2>
-            </section>
-            <section>
-                <h3>Trying to Finish College</h3>
-            </section>
-        </article>
+        <article id="right">
+            <article class="right-top">
+                <h1>Currently Working On</h1>
+                <section class="college_project">
+                    <h3>HTML & CSS Project</h2>
+                </section>
+                <section>
+                    <h3>Trying to Finish College</h3>
+                </section>
+            </article>
+            
+            <article class="right-bottom">
+                <h1>Bruh moment</h1>
+            </article>
+        <article>
+        
 
    </main>
    <footer>
         <p id="contact">Contact information</p>
         <ul>
-            <li> Email: tudor04boureanu@gmail.com </li>
-            <li> <a href="https://www.linkedin.com/in/tudor-boureanu-412878301/">Linkedin</a></li>
+            <li>
+                <div>
+                    <p>Email</p>
+                </div>
+                
+            </li>
+
+            <li> <a href="https://www.linkedin.com/in/tudor-boureanu-412878301/"><img src="./imagini/logo-linkedin-logo-icon-png-svg-295624360.png" alt="linkedin"></a></li>
             
         </ul>
    </footer>

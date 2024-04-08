@@ -1,64 +1,255 @@
-html{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    color: white;
-    background-color: rgb(30, 29, 29);
-}
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@500&display=swap');
 
-
-header, footer{
-    padding: 10px;
-    background-color: #98221e;
-    margin: -2px;
-}
-header li
+html
 {
+    font-family: "Kode Mono";
+    scroll-behavior: smooth;
+    width: 95%;
+    background-color: rgb(0, 0, 0);
     display: flex;
-    flex-flow: row;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    color:white;
 }
-li > a
+
+
+a
 {
     text-decoration: none;
 }
-li > a:link, a:visited
-{
+a:link, a:visited{
     color:white
 }
-nav > ul
+
+
+
+/*
+
+HEADER BEGIN
+
+*/
+header
 {
-    
+    border-top: solid white;
+    border-left: solid white;
+    border-right:solid white;
+}
+
+
+.TitleLogin
+{
+    font-size:30px;
+    background-color: rgb(109, 28, 28);
     display: flex;
-    padding: 1em;
-    border: solid pink;
-    justify-content:space-evenly;
-    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    padding-left: 12px;
+    padding-right: 12px;
 }
-nav > ul > li
+#Login
 {
-    background-color: crimson;
-    font: 1.2em "Fira Sans";
-    display: inline-flex;
+    background-color: #710d21;
+    border: solid rgb(71, 0, 0) 1px;
+    font-size: 20px;
+    align-self: center;
+    margin-left: auto;    
+}
+
+#Login:hover
+{
+
+    background-color: #ae1634;
+}
+
+#Login > a
+{
     padding: 1em;
-    border: solid black;
-    width:fit-content;
+}
+
+
+header > nav > ul
+{
+    list-style-type: none;
+    display: flex;
+    margin-left: -40px;
+    margin-bottom: 5px;
+}
+header > nav > ul > li
+{
+    width: 25%;
+    font-size: 30px;    
+    display: flex;
+    justify-content: center;
     
 }
 
-main{
-    display:flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: rgb(56, 21, 17);
+
+
+header>nav>ul>li>a 
+{
+    border: solid white 2px;
+    padding: 1em 1em 1em 1em;
+    margin: -.5em 0em -1.5em -0em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
 }
 
-main article
+header> nav> ul> li > a:hover
 {
-    background-color: #934644;
-    border-style: solid;
-    border-color: black;
-    margin: 1em;
-    padding: 1em;
-    width: 30em;
+    background-color: #dc4747;
 }
+
+header, footer
+{
+    background-color: #a52a2a;
+    display: flex;    
+    flex-flow: wrap column;
+    justify-content: space-between;
+}
+
+
+/*
+
+HEADER END
+
+MAIN BEGIN
+
+*/
+
+
+
+main
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(225, 64, 64);
+    border-left: solid white;
+    border-right: solid white;
+    padding: 2em 1em 2em 1em
+
+}
+
+#left
+{
+    width: 90%;
+    background: #aa3030;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    justify-self: center;
+    border: solid pink;
+    
+    padding: 2em 1em 2em 1em;
+}
+
+#right
+{
+    width: 93%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-self: center;
+    
+
+}
+
+#right > .right-top , #right > .right-bottom
+{
+    height: 95%;
+    width: 100%;
+    background: #aa3030;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-around;
+    align-items: center;
+    border: solid pink;
+}
+
+#right > .right-top
+{
+    align-self: flex-start;
+}
+
+#right > .right-bottom
+{
+    align-self:flex-end;
+}
+
+.Aboutme
+{
+    width: 80%;
+    display:flex;
+    padding: 1em 1em 1em 1em;
+    flex-flow: wrap column;
+    margin:0 auto;
+    align-content: center;
+    background-color: #b73131;
+    border: solid black;
+
+}
+
+.Images
+{
+    height: 300px;
+    width: 512px;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-self: center;
+    overflow: scroll;
+    overscroll-behavior-y: none ;
+    scroll-snap-type: x mandatory;
+}
+
+.Images > img
+{
+    scroll-snap-align:center;
+    scroll-snap-stop: normal;
+    scroll-margin: 10px;
+    justify-items: center;
+    align-items: center;
+    height:280px
+}
+
+/*
+
+MAIN END
+
+FOOTER
+*/
+
+footer
+{
+    border: solid white;
+    padding: 1em 1em 1em 1em;
+}
+
+footer>ul
+{
+
+    list-style-type: none;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer >ul > li
+{
+    margin: 0em 2em 0em 2em;
+}
+
+
+footer > ul > li > a >img
+{
+    height: 1.2em;
+    width: auto;
+}
+
+
+
+
+
+
+
