@@ -7,7 +7,7 @@
     <title>Tudor Boureanu</title>
 </head>
 <body>
-   <header>
+    <header>
         <div class="TitleLogin">
             <p>Tudor Boureanu</p>
             <div id="Login"><a href="./WIP.html">Login</a></div>
@@ -16,9 +16,25 @@
         <nav>
             <ul>
                 
-                <li><a href=#about_me>Front Page</a></li>
-                <li><a id="Projects" href="./projects.html">Projects</a></li>
-                               <li><a href="./WIP.html">Blog</a></li>
+                <li><a href=./index.html>Front Page</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a id="Projects" href="./projects.html">Projects</a>
+                        <div class="dropdown-content">
+                           <ul>
+                                <li>
+                                    <a href="https://github.com/OMNIBRN">Github</a>
+                                </li>
+                                <li>
+                                    <a href="projects.html#temaASC">Tema Arhitectura Sistemelor de Calcul</a>
+                                    
+                                </li>
+                           </ul> 
+                        </div>
+                    </div>
+                   
+                   
+                <li><a href="./WIP.html">Blog</a></li>
                 <li><a href=#contact>Contact</a>
             
                 
@@ -29,19 +45,20 @@
     <main class="Front-Page">
         <article id = "left">
             <h1>About Me</h1>
-            <section class="Aboutme">
+            <div class="Aboutme">
             <p>
                 Hi, my name is Tudor and I live in Bucharest. I am a studying Computer Science at the University of Bucharest. 
                 I have also finished National College Ion Creanga Bucharest. I got into computers at a young age because I
                 was playing video games and started to learn programming since high school.
                 I'm also interested in:
+            </p>
                 <ul>
                     <li>GNU/Linux Endeavours</li>
                     <li>Hacking</li>
                     <li>Fixing and Modding Hardware (mostly consoles)</li>
                     <li>Socializing</li>
                 </ul>
-            </p>
+            
             <div class="Images">
                 <img src="./imagini/GNULinux.png" alt="Linux Desktop Image">
                 <img src="./imagini/pineapple-router.jpg" alt="Pineapple Router">
@@ -52,12 +69,12 @@
                 If you're wondering what I've achieved (mostly nothing) you can take a look at the Projects tab. You can also read my blog and shoot me a message if you want to.
             </p>
             
-            </section>
+            </div>
         </article>
-        <article id="right">
+        <div id="right">
             <article class="right-top">
-                <h1>Currently Working On</h1>
-                <section class="college_project">
+                <h2>Currently Working On</h2>
+                <div class="college_project">
                     <ul>
                         <li>
                             HTML & CSS Project (This website)
@@ -67,12 +84,12 @@
                         </li>
                     </ul>
                     
-                </section>
+                </div>
             </article>
             
             <article class="right-bottom">
-                <h1>Proficiencies</h1>
-                <section class="Proficiencies">
+                <h2>Proficiencies</h2>
+                <div class="Proficiencies">
                     <ul>
                         <li>
                             Software Development (Python & C++)
@@ -87,23 +104,34 @@
                             Mathematics knowledge
                         </li>
                     </ul>
-                </section>
+                </div>
             </article>
+        </div>
         
-        
-
    </main>
    <footer>
         <p id="contact">Contact information</p>
         <ul>
+
             <li>
-                <div>
-                    <p>Email</p>
+                <div class="dropdown">
+                    <img src="./imagini/emailicon.png" alt="Email Icon">
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>
+                                tudor04boureanu@gmail.com
+                            </li>
+                            <li>
+                                tudor.boureanu@s.unibuc.ro
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                
             </li>
+            
 
             <li> <a href="https://www.linkedin.com/in/tudor-boureanu-412878301/"><img src="./imagini/logo-linkedin-logo-icon-png-svg-295624360.png" alt="linkedin"></a></li>
+            <li> <a href="https://github.com/OmniBRN"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2020%2F11%2FGitHub-Symbol.png&f=1&nofb=1&ipt=c63510da2cd8e66f0a6eb8bf646b72117af427f3eec9d8cfaf2bb8028ed345c1&ipo=images" alt="Github Logo"></a></li>
             
         </ul>
    </footer>

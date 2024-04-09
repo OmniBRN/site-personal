@@ -5,6 +5,8 @@ html
     font-family: "Kode Mono";
     scroll-behavior: smooth;
     width: 95%;
+    height: 95%;
+    justify-content: center;
     background-color: rgb(0, 0, 0);
     display: flex;
     padding-left: 2.5%;
@@ -15,7 +17,7 @@ html
 html .WIP
 {
     display: flex;
-    justify-content: c;
+    justify-content: center;
     width: 1750px;
     height: 480px;
 }
@@ -28,6 +30,130 @@ a:link, a:visited{
     color:white
 }
 
+.dropdown
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.dropdown-content
+{
+    display: none;
+    border: solid white;
+    position: absolute;
+    background-color: #a52a2a;
+    min-width: 160px;
+    overflow: auto;
+    z-index:1;
+}
+
+
+
+header .dropdown-content
+{
+    margin-top: 2.5em;
+    width: 98%;
+}
+
+
+header .dropdown:hover .dropdown-content
+{
+    display:block;
+    
+}
+
+header .dropdown-content li
+{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    height: 3.5em;
+
+}
+
+header .dropdown-content li a
+{
+    padding: .5em 0em .5em .5em;
+    margin: 0em;
+    height: 3em;
+    width: 95%;
+    align-items: center;
+    border: solid white;
+}
+
+header .dropdown-content li a:hover
+{
+    background-color: #dc4747;
+}
+
+#ProjectsPage
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+#ProjectsPage article 
+{
+    display: flex;
+    flex-flow: wrap column;
+    border:solid pink;
+    padding: 2em 2em 2em 2em;
+    width: 50em;
+    align-items: center;
+    
+}
+
+#CollegeProjects, #OtherProjects
+{
+    padding: 0em .5em 0em .5em;
+}
+
+.ProjectBox
+{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 1em;
+    border:solid black;
+    width: 70%;
+    background-color: #47222a;
+    justify-content: center;
+}
+
+.ProjectBox a
+{
+    border: solid rgb(200, 223, 244);
+}
+.ProjectBox a:hover
+{
+    background-color: #373463;
+}
+
+
+footer .dropdown-content
+{
+    width: 1000%;
+    bottom : 100%;
+    padding: .5em 0em .5em 0em;
+}
+
+footer .dropdown:hover .dropdown-content
+{
+
+    display:flex;
+    justify-content: center;
+    align-content: space-around;
+
+}
+
+
+
+
+
+
 
 
 /*
@@ -37,6 +163,7 @@ HEADER BEGIN
 */
 header
 {
+
     border-top: solid white;
     border-left: solid white;
     border-right:solid white;
@@ -74,7 +201,7 @@ header
 }
 
 
-header > nav > ul
+header > nav > ul, div > ul >li
 {
     list-style-type: none;
     display: flex;
@@ -98,7 +225,7 @@ header > nav > ul > li
 
 
 
-header>nav>ul>li>a 
+header>nav>ul>li>a , header>nav>ul>li>div>a
 {
     border: solid white 2px;
     padding: 1em 1em 1em 1em;
@@ -109,7 +236,12 @@ header>nav>ul>li>a
 
 }
 
-header> nav> ul> li > a:hover
+header>nav>ul>li>div
+{
+    width: 100%
+}
+
+header> nav> ul> li > a:hover, header>nav>ul>li>div>a:hover
 {
     background-color: #dc4747;
 }
@@ -266,15 +398,8 @@ footer >ul > li
 }
 
 
-footer > ul > li > a >img
+footer > ul > li > a >img, footer > ul > li > div > img
 {
-    height: 1.2em;
+    height: 2em;
     width: auto;
 }
-
-
-
-
-
-
-

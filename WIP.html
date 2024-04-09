@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WIP</title>
+    <title>Tudor Boureanu - WIP</title>
 </head>
 <body>
     <header>
@@ -16,9 +16,25 @@
         <nav>
             <ul>
                 
-                <li><a href=./index.html#about_me>Front Page</a></li>
-                <li><a id="Projects" href="./projects.html">Projects</a></li>
-                               <li><a href="./WIP.html">Blog</a></li>
+                <li><a href=./index.html>Front Page</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a id="Projects" href="./projects.html">Projects</a>
+                        <div class="dropdown-content">
+                           <ul>
+                                <li>
+                                    <a href="https://github.com/OMNIBRN">Github</a>
+                                </li>
+                                <li>
+                                    <a href="projects.html#temaASC">Tema Arhitectura Sistemelor de Calcul</a>
+
+                                </li>
+                           </ul> 
+                        </div>
+                    </div>
+                   
+                   
+                <li><a href="./WIP.html">Blog</a></li>
                 <li><a href=#contact>Contact</a>
             
                 
@@ -26,25 +42,37 @@
             </nav>
         </header>
     <main>
-        <article class="WIP">
-            <section class="WorkIP">
-                <h1>This page is a work in progress, check later!</h1>
-            </section>
-                 </article>
+        <div class="WIP">
+            <div class="WorkIP">
+                <h2>This page is a work in progress, check later!</h2>
+            </div>
+        </div>
         
             
     </main>
     <footer>
         <p id="contact">Contact information</p>
         <ul>
+
             <li>
-                <div>
-                    <p>Email</p>
+                <div class="dropdown">
+                    <img src="./imagini/emailicon.png" alt="Email Icon">
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>
+                                tudor04boureanu@gmail.com
+                            </li>
+                            <li>
+                                tudor.boureanu@s.unibuc.ro
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                
             </li>
+            
 
             <li> <a href="https://www.linkedin.com/in/tudor-boureanu-412878301/"><img src="./imagini/logo-linkedin-logo-icon-png-svg-295624360.png" alt="linkedin"></a></li>
+            <li> <a href="https://github.com/OmniBRN"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2020%2F11%2FGitHub-Symbol.png&f=1&nofb=1&ipt=c63510da2cd8e66f0a6eb8bf646b72117af427f3eec9d8cfaf2bb8028ed345c1&ipo=images" alt="Github Icon"></a></li>
             
         </ul>
    </footer>
