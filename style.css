@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@500&display=swap');
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #8d3232;
+}
+  
+  ::-webkit-scrollbar-thumb {
+    background: #4b4848;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2c2828;
+  }
+
 html
 {
     font-family: "Kode Mono";
@@ -92,7 +109,7 @@ header .dropdown-content li a:hover
 #ProjectsPage
 {
     display:grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
 }
 
 #ProjectsPage article 
@@ -101,9 +118,10 @@ header .dropdown-content li a:hover
     flex-flow: wrap column;
     border:solid pink;
     padding: 2em 2em 2em 2em;
-    width: 50em;
+    width: 45em;
     align-items: center;
-    
+    margin: 0em 2em 0em 2em;
+    background: #9e3232;
 }
 
 #CollegeProjects, #OtherProjects
@@ -120,16 +138,18 @@ header .dropdown-content li a:hover
     border:solid black;
     width: 70%;
     background-color: #47222a;
-    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2em;
 }
+
 
 .ProjectBox a
 {
-    border: solid rgb(200, 223, 244);
+    border: solid rgb(200, 223, 244) 1px;
 }
 .ProjectBox a:hover
 {
-    background-color: #373463;
+    background-color: #932e29;
 }
 
 
@@ -163,7 +183,7 @@ HEADER BEGIN
 */
 header
 {
-
+    z-index: 2;
     border-top: solid white;
     border-left: solid white;
     border-right:solid white;
