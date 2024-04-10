@@ -1,5 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@500&display=swap');
 
+
+html
+{
+    font-family: "Kode Mono";
+    scroll-behavior: smooth;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    color:white;
+    
+}
+
+body
+{
+    width: 100%;
+    min-width: 300px;
+    min-height: 600px;
+}
+
+
+a
+{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color:white
+}
+
+
+
+*
+{
+    box-sizing: border-box;
+}
+
+
+/*scrollbar*/
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -16,37 +56,9 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #2c2828;
   }
+/*scrollbar*/
 
-html
-{
-    font-family: "Kode Mono";
-    scroll-behavior: smooth;
-    width: 95%;
-    height: 95%;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    color:white;
-}
-
-html .WIP
-{
-    display: flex;
-    justify-content: center;
-    width: 1750px;
-    height: 480px;
-}
-
-a
-{
-    text-decoration: none;
-}
-a:link, a:visited{
-    color:white
-}
-
+/*Dropdown menus*/
 .dropdown
 {
     position: relative;
@@ -61,7 +73,7 @@ a:link, a:visited{
     border: solid white;
     position: absolute;
     background-color: #a52a2a;
-    min-width: 160px;
+    min-width: 75px;
     overflow: auto;
     z-index:1;
 }
@@ -87,24 +99,44 @@ header .dropdown-content li
     flex-flow: wrap column;
     justify-content: center;
     align-items: center;
-    height: 3.5em;
+    height: 100%;
 
 }
 
 header .dropdown-content li a
 {
     padding: .5em 0em .5em .5em;
-    margin: 0em;
-    height: 3em;
-    width: 95%;
+    margin-bottom: -.19em;
+    width: 100%;
     align-items: center;
-    border: solid white;
+    border: solid white 2px;
 }
 
 header .dropdown-content li a:hover
 {
     background-color: #dc4747;
 }
+
+
+footer .dropdown-content
+{
+    width: 1000%;
+    bottom : 100%;
+    padding: .5em 0em .5em 0em;
+}
+
+footer .dropdown:hover .dropdown-content
+{
+
+    display:flex;
+    justify-content: center;
+    align-content: space-around;
+
+}
+
+/*Dropdown menus*/
+
+
 
 #ProjectsPage
 {
@@ -118,9 +150,9 @@ header .dropdown-content li a:hover
     flex-flow: wrap column;
     border:solid pink;
     padding: 2em 2em 2em 2em;
-    width: 45em;
+    width: 90%;
     align-items: center;
-    margin: 0em 2em 0em 2em;
+    justify-self: center;
     background: #9e3232;
 }
 
@@ -153,21 +185,6 @@ header .dropdown-content li a:hover
 }
 
 
-footer .dropdown-content
-{
-    width: 1000%;
-    bottom : 100%;
-    padding: .5em 0em .5em 0em;
-}
-
-footer .dropdown:hover .dropdown-content
-{
-
-    display:flex;
-    justify-content: center;
-    align-content: space-around;
-
-}
 
 
 
@@ -197,8 +214,8 @@ header
     display: flex;
     justify-content: space-evenly;
     flex-flow: wrap;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 0em 1em 0em 1em;
+
 }
 #Login
 {
@@ -290,6 +307,7 @@ MAIN BEGIN
     
 }
 
+
 .WIP
 {
 
@@ -297,15 +315,19 @@ MAIN BEGIN
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    align-self: center;
 }
+
+
 
 main
 {
+
     background-color: rgb(225, 64, 64);
     border-left: solid white;
     border-right: solid white;
-    padding: 2em 1em 2em 1em
-    
+    padding: 2em 1em 2em 1em;
+    min-height: 400px;
 }
 
 #left
@@ -317,8 +339,22 @@ main
     align-items: center;
     justify-self: center;
     border: solid pink;
-    
     padding: 2em 1em 2em 1em;
+}
+
+.Front-Page #left .Aboutme p
+{
+        width: 95%;
+        align-self: center;
+        font-size: 21px;
+}
+
+.Front-Page #left .Aboutme ul
+{
+    font-size: 18px;
+    width: 100%;
+    justify-self: center;
+    margin-left: 5em;
 }
 
 #right
@@ -341,6 +377,7 @@ main
     justify-content: center;
     align-items: center;
     border: solid pink;
+    padding-bottom: 3em;
 }
 
 #right > .right-top
@@ -350,6 +387,8 @@ main
 
 #right > .right-bottom
 {
+    display: flex;
+    flex-flow: column;
     align-self:flex-end;
 }
 
@@ -366,10 +405,12 @@ main
 
 }
 
+
 .Images
 {
-    height: 300px;
-    width: 512px;
+    max-height: 300px;
+    max-width: 720px;
+    min-width: 300px;
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
@@ -388,6 +429,13 @@ main
     align-items: center;
     height:280px
 }
+
+.Aboutme img, div.Images
+    {
+        height: 282px;
+        width: 500px;
+    }
+
 
 /*
 
@@ -422,4 +470,216 @@ footer > ul > li > a >img, footer > ul > li > div > img
 {
     height: 2em;
     width: auto;
+}
+
+
+@media only screen and (min-width:300px) and (max-width:450px)
+{
+    header a
+    {
+        font-size:7px
+    }
+
+    .TitleLogin
+    {
+        font-size: 8px;
+    }
+
+    #left, #right
+    {
+        width: 100%;
+    }
+
+    .Front-Page
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #left
+    {
+        margin-bottom: 2em;
+    }
+
+    .Front-Page #left .Aboutme p
+    {
+        width: 95%;
+        align-self: center;
+        font-size: 6px;
+    }
+
+    .Front-Page ul li
+    {
+        font-size:5px
+    }
+
+    footer #contact
+    {
+        font-size: 8px;
+    }
+
+    footer img
+    {
+        height: .2em;
+    }
+
+    
+    
+}
+
+@media only screen and (min-width:450px) and (max-width:600px)
+{
+    header a
+    {
+        font-size:11px
+    }
+
+    .Front-Page
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .Aboutme img, div.Images
+    {
+        height: 169px;
+        width: 300px;
+    }
+
+    .Front-Page #left .Aboutme p
+    {
+        width: 95%;
+        align-self: center;
+        font-size: 12px;
+    }
+
+    .Front-Page ul li
+    {
+        font-size:10px
+    }
+
+    #left, #right
+    {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:800px)
+{
+    header a
+    {
+        font-size:16px;
+    }
+
+    .Front-Page
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #left
+    {
+        margin-bottom: 2em;
+    }
+
+    .Front-Page #left .Aboutme p
+    {
+        width: 95%;
+        align-self: center;
+        font-size: 12px;
+    }
+
+    .Front-Page ul li
+    {
+        font-size:11px
+    }
+
+    .Aboutme img, div.Images
+    {
+        height: 169px;
+        width: 300px;
+    }
+
+    
+}
+
+@media only screen and (min-width:800px) and (max-width:1100px)
+{
+    header a
+    {
+        font-size:22px;
+    }
+
+    .Front-Page #left .Aboutme p
+    {
+        width: 95%;
+        align-self: center;
+        font-size: 15px;
+    }
+
+    .Front-Page
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #left, #right
+    {
+        width: 90%;
+    }
+
+    #left
+    {
+        margin-bottom: 2em;
+    }
+
+    
+    
+}
+
+@media only screen and (min-width:1100px) and (max-width:1600px)
+{
+
+    .Aboutme p
+    {
+        width: 95%;
+        align-self: center;
+        font-size: 20px;
+    }
+    
+
+    .Front-Page
+    {
+        grid-template-columns: 1fr;
+    }
+    #left, #right
+    {
+        width: 90%;
+    }
+
+    #left
+    {
+        margin-bottom: 2em;
+    }
+    
+    
+    
+}
+
+@media only screen and (min-width:800px) and (max-width:1000px)
+{
+    .Aboutme img, div.Images
+    {
+        height: 225px;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:1200px)
+{
+    #ProjectsPage
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #CollegeProjects
+    {
+        margin-bottom: 2em;
+    }
 }
