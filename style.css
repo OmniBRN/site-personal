@@ -560,6 +560,11 @@ footer > ul > li > a >img, footer > ul > li > div > img
     {
         width: 90%;
     }
+
+    header .dropdown-content
+    {
+        margin-top: 1em;
+    }
 }
 
 @media only screen and (min-width:600px) and (max-width:800px)
@@ -597,6 +602,11 @@ footer > ul > li > a >img, footer > ul > li > div > img
         width: 300px;
     }
 
+    header .dropdown-content
+    {
+        margin-top: 1em;
+    }
+
     
 }
 
@@ -629,6 +639,11 @@ footer > ul > li > a >img, footer > ul > li > div > img
         margin-bottom: 2em;
     }
 
+    header .dropdown-content
+    {
+        margin-top: 2em;
+    }
+
     
     
 }
@@ -657,6 +672,11 @@ footer > ul > li > a >img, footer > ul > li > div > img
     {
         margin-bottom: 2em;
     }
+
+    header .dropdown-content
+    {
+        margin-top: 2.5em;
+    }
     
     
     
@@ -669,6 +689,7 @@ footer > ul > li > a >img, footer > ul > li > div > img
         height: 225px;
         width: 400px;
     }
+    
 }
 
 @media only screen and (max-width:1200px)
