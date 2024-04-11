@@ -482,7 +482,7 @@ footer > ul > li > a >img, footer > ul > li > div > img
 
     #ProjectsPage h3
     {
-        font-size: 8;
+        font-size: 8px;
     }
 
     .ProjectBox
@@ -512,7 +512,7 @@ footer > ul > li > a >img, footer > ul > li > div > img
     
     .Aboutme img, div.Images
     {
-        min-width: none;
+
         height: 85px;
         width: 150px;
     }
